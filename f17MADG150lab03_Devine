@@ -1,0 +1,26 @@
+void setup(){
+  size(1600,1600);
+  surface.setResizable(true);
+  surface.setTitle("Homework 3");
+  println ("i-2=118");
+  println ("i+20=140");
+  frameRate(1080);
+parseFloat (i); 
+parseFloat (w);
+};
+
+
+  int i =120;
+  int w=10;
+void draw(){
+  background(40,120,180);
+ rect(pmouseX,pmouseY,i-2,i+20);
+ dist(0,0,i-2,-i);
+  rect(mouseX+(i),mouseY+5,20,20);
+}
+void mousePressed(){
+  fill(0,millis()%255);
+}
+void keyPressed(){
+   background(0,millis()%255,80,90);
+}
