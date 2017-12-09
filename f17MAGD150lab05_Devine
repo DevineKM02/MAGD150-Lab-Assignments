@@ -1,0 +1,43 @@
+float x=100;
+float y=80;
+boolean button1;
+float buttonX, buttonY, w, h, rounding;
+void setup(){
+  size(600,600);
+  background(160);
+}
+
+void draw(){
+  fill(0);
+  rect(50,120, x*5, y*5); //Black Screen Rectangle
+  fill(120);
+  rect(x-40,y+140, 40,40); //Rectangle Button
+  ellipse(x-17,y+250, 50, 50);
+  
+  fill(255,0,0);
+   text("Blue", x-40, y+140);
+   text("Turquoise", x-17, y+250);
+  
+  //Rectange Button Function (Creates Blue Rectangle)
+  if(mousePressed){
+    if(mouseX > (60) && mouseX < x && mouseY > (220) && mouseY < (260)){
+      fill(0,0,255);
+      rect (140,200,x*3+20,y*3+20);
+      
+    }
+    else if(mouseX > (83-25) && mouseX < (83 + 25) && mouseY > ((330) - 25) && mouseY < (330) + 25){
+      fill(0, 120,129);
+      rect (140,200,x*3+20,y*3+20);
+     
+  }
+
+   //Circular Button Function (Creates Turquoise Rectangle)
+    
+    }
+  
+  
+  
+  
+
+
+}
