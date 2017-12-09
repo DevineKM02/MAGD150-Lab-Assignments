@@ -1,0 +1,34 @@
+float xPosition, yPosition;
+float xSpeed, ySpeed;
+float w, h;
+float xMinBoundary, xMaxBoundary, 
+  yMinBoundary, yMaxBoundary;
+  int xDirection=1, yDirection=1;
+  int choice=0;
+  int xPosition1=mouseX;
+  int yPosition1=mouseY;
+  int x=1;
+  void setup (){
+    size (400,400);
+    surface.setResizable(true);
+  background (0,120,255);
+}
+
+void draw(){
+  while(x<10){
+    noFill();
+    ellipse(width/2, height/2, x*20, x*20);
+    x++;
+  }
+}
+
+void mousePressed (){
+  fill(255,0,0);
+  ellipse(mouseX,mouseY,20,20);
+}
+void keyPressed (){
+  fill(210,180,100);
+  ellipse(180,180,300,300);
+  fill(230,170,60);
+  ellipse(180,180,270,270);
+}
